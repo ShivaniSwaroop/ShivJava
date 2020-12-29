@@ -1,0 +1,16 @@
+public class Main extends Thread 
+{
+  public static int amt = 1;
+
+  public static void main(String[] args) {
+    Main thread = new Main();
+    thread.start();
+    System.out.println(amt);
+    amt=amt+2;
+    System.out.println(amt);
+  }
+
+  public void run() {
+    amt=amt+2;
+  }
+}
