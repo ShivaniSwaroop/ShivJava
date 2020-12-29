@@ -1,0 +1,26 @@
+class Marks {
+  public void evaluate() {
+    System.out.println("The marks of a student");
+  }
+}
+class Pass extends Marks {
+  public void evaluate() {
+    System.out.println("Pass : Above 50");
+  }
+}
+class Fail extends Marks {
+  public void evaluate() {
+    System.out.println("Fail : Below 50");
+  }
+}
+class Main {
+  public static void main(String[] args) {
+    Marks studMarks = new Marks();
+    Marks studPass = new Pass();
+    Marks studFail = new Fail();
+        
+    studMarks.evaluate();
+    studPass.evaluate();
+    studFail.evaluate();
+  }
+}
