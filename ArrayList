@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+public class Main 
+{ 
+  public static void main(String[] args) 
+  { 
+    ArrayList<String> icecreams = new ArrayList<String>();
+    icecreams.add("Chocolate");
+    icecreams.add("Butterscotch");
+    icecreams.add("Strawberry");
+    icecreams.add("Mango");
+    System.out.println(icecreams);
+  } 
+}
