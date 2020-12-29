@@ -1,0 +1,15 @@
+class Vehicle {
+  protected String brand = "Ford";
+  public void color() {
+    System.out.println("Black");
+  }
+}
+
+class Car extends Vehicle {
+  private String modName = "Fiesta";
+  public static void main(String[] args) {
+    Car myCar = new Car();
+    myCar.color();
+    System.out.println(myCar.brand + " " + myCar.modName);
+  }
+}
