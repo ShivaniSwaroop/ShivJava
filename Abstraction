@@ -1,0 +1,27 @@
+// Abstract class
+abstract class Food 
+{
+  public abstract void mainDish();
+  public void sideDish() 
+  {
+    System.out.println("Side Dish : Chicken 65 , Raita");
+  }
+}
+
+class Lunch extends Food 
+{
+  public void mainDish() 
+  {
+    System.out.println("Main Dish : Biryani");
+  }
+}
+
+class Main 
+{
+  public static void main(String[] args)
+  {
+    Lunch myLunch = new Lunch(); 
+    myLunch.mainDish();
+    myLunch.sideDish();
+  }
+}
