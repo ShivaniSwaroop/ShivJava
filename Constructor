@@ -1,0 +1,15 @@
+public class Main 
+{
+  int studAge;
+  String studName;
+  public Main(int age, String name) 
+  {
+    studAge = age;
+    studName = name;
+  }
+ public static void main(String[] args) 
+ {
+    Main student = new Main(21, "Shivani");
+    System.out.println(student.studName + " " + student.studAge);
+  }
+}
