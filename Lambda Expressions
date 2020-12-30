@@ -1,0 +1,15 @@
+interface LamExp
+{  
+    public String say(String name);  
+}  
+  
+public class LambdaExpression
+{  
+    public static void main(String[] args) 
+    {  
+        LamExp s1=(name)->{ return "Hi, "+name; };  
+        System.out.println(s1.say("Shiv"));    
+        LamExp s2= name ->{ return "Hi, "+name; };  
+        System.out.println(s2.say("Ila"));  
+    }  
+}  
