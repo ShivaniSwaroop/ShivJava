@@ -1,0 +1,17 @@
+import java.util.Optional;  
+public class OptionalClass 
+{  
+    public static void main(String[] args) 
+    {  
+        String[] str = new String[5];        
+        str[3] = "Hi! How are you?";
+        Optional<String> op = Optional.ofNullable(str[3]);  
+        if(op.isPresent())
+        {    
+            String lowercaseString = str[3].toLowerCase();  
+            System.out.print(lowercaseString);  
+        }
+        else  
+            System.out.println("No Value");  
+    }  
+}  
